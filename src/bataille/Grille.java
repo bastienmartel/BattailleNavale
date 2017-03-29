@@ -1,4 +1,6 @@
 
+package bataille;
+
 public class Grille {
 	
 	private int x;

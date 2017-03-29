@@ -1,3 +1,4 @@
+package bataille;
 
 /*public enum typeBateau{
 	PorteAvion("Porte Avion"),
