@@ -4,7 +4,8 @@ public class Joueur {
 
 		private String nomJoueur;
 		private int score;
-		private Grille grilleJoueur;
+		private Grille[][] grilleJoueur;
+		private boolean caseBateau = false;
 		private Bateau bateau;
 		
 		
@@ -13,7 +14,16 @@ public class Joueur {
 		{
 			this.nomJoueur = nomJoueur;
 			this.score = score;
-			grilleJoueur = new Grille(width,heigth);
+			grilleJoueur = new Grille[heigth][width];
+			for(int j = 0 ; j < heigth ; j++)
+			{
+				
+			
+				for(int i = 0 ; i < width ; i++)
+				{
+					grilleJoueur[j][i].setCaseBateau(caseBateau);
+				}
+			}
 		}
 		public String getNomJoueur()
 		{
@@ -32,6 +42,15 @@ public class Joueur {
 			this.score = score;
 		}
 		
-		
+		public boolean tirerMissile(Joueur cible, int positionX, int positionY) {
+			if(cible.grilleJoueur[positionY][positionX].isCaseBateau())
+			{
+				caseBateau = true;
+			}else
+			{
+				caseBateau = false;
+			}
+			return caseBateau;
+		}
 		
 }

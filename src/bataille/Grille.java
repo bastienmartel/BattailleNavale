@@ -5,6 +5,7 @@ public class Grille {
 	
 	private int x;
 	private int y;
+	private boolean caseBateau;
 	
 	/**
 	 * 
@@ -32,6 +33,14 @@ public class Grille {
 
 	public void setY(int y) {
 		this.y = y;
+	}
+
+	public boolean isCaseBateau() {
+		return caseBateau;
+	}
+
+	public void setCaseBateau(boolean caseBateau) {
+		this.caseBateau = caseBateau;
 	}
 
 }
