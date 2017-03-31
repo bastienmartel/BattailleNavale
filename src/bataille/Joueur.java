@@ -12,7 +12,7 @@ public class Joueur {
 		ArrayList<Bateau> listBateau;
 
 		
-		public Joueur(String nomJoueur,int width, int heigth )
+		public Joueur(String nomJoueur)
 		{
 			this.nomJoueur = nomJoueur;
 			this.score = 0;
