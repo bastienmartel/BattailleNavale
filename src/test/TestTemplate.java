@@ -38,6 +38,13 @@ public class TestTemplate {
 	@org.junit.Test
 	public void testCreationJoueur()
 	{
+		//Vérifier que les joueurs ne sont pas identiques (même nom)
+		assertNotEquals(j.getNomJoueur(), j2.getNomJoueur());
+		
+	}
+	@org.junit.Test
+	public void testGrilleIdentique(){
+		//Vérifier que les 2 joueurs ont la même grille au début du jeu
 		
 	}
 
