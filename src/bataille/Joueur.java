@@ -12,10 +12,10 @@ public class Joueur {
 		ArrayList<Bateau> listBateau;
 
 		
-		public Joueur(String nomJoueur, int score, int width, int heigth )
+		public Joueur(String nomJoueur,int width, int heigth )
 		{
 			this.nomJoueur = nomJoueur;
-			this.score = score;
+			this.score = 0;
 			grilleJoueur = new Grille[heigth][width];
 			for(int j = 0 ; j < heigth ; j++)
 			{	
