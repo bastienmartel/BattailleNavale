@@ -1,5 +1,6 @@
 package bataille;
 
+import java.util.EnumSet;
 import java.util.Scanner;
 
 public class Game {
@@ -14,6 +15,10 @@ public class Game {
 			s.reset();
 			int height = s.nextInt();
 			Grille plateau = new Grille(width,height);
+			System.out.println("Entrez le type du bateau parmi : \n" );
+			for(typeBateau t : typeBateau.values()){
+				System.out.println(t.ordinal() + t + "\n");
+			}
 			
 			
 			
