@@ -15,10 +15,16 @@ public enum typeBateau
 		this.name= name;
 		this.taille= taille;
 	}
-	
-	public void afficheListe(){
-		for(typeBateau t : typeBateau.values()){
-			System.out.println(t.name);
-		}
+
+	public String getName()
+	{
+		return name;
 	}
+
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	
+	
 }

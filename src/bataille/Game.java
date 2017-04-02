@@ -16,10 +16,15 @@ public class Game {
 			int height = s.nextInt();
 			Grille plateau = new Grille(width,height);
 			System.out.println("Entrez le type du bateau parmi : \n" );
+			int i =0;
 			for(typeBateau t : typeBateau.values()){
-				System.out.println(t.ordinal() + t + "\n");
+				System.out.println(i +" "+ t + "\n");
+				i++;
 			}
-			
+			s.reset();
+			int choix = s.nextInt();
+			typeBateau[] t = typeBateau.values();
+			System.out.println("Vous allez placer le " + t[choix].getName());
 			
 			
 	}
