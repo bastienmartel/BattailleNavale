@@ -4,6 +4,7 @@ package bataille;
 public class Grille {
 	//test travis
 	//test travis 2, le retour
+	//test travis 3, il ne s'arrêtera pas
 	private int x;
 	private int y;
 	private int[][] tableau; //Dans le tableau, 0: la case est libre; 1:PorteAvion 2:Croiseur 3:ContreTorpilleur 4:SousMarin 6:Torpilleur
